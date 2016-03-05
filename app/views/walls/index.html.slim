@@ -1,0 +1,11 @@
+br
+= link_to 'new post', new_wall_path
+
+
+- @posts.each do |post|
+  h4
+    = post.name
+  p
+    = post.text
+  p
+    = link_to 'Show', wall_path(post)

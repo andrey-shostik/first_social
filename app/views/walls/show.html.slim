@@ -1,0 +1,10 @@
+h4
+  = @post.name
+p
+  = @post.text
+p
+  = link_to 'Update', edit_wall_path(@post)
+p
+  = link_to 'Delete', wall_path(@post), method: :delete
+p
+  = link_to 'my Wall', walls_path
