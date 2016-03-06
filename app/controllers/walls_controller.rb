@@ -26,7 +26,7 @@ class WallsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      redirect_to  walls_path
+      redirect_to  wall_path(@post)
     else
       render :new
     end

@@ -10,6 +10,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'slim-rails'
 gem 'has_secure_token'
 gem 'awesome_print'
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # gem 'unicorn'                  # web server dor production
 # gem 'capistrano-rails', group: :development

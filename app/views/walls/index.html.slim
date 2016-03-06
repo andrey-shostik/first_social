@@ -1,6 +1,11 @@
-br
-= link_to 'new post', new_wall_path
-
+div
+  = link_to 'My_Dashboard', root_path
+div
+  br = image_tag current_user.avatar.url(:thumb) if current_user
+div
+  label.big-text = current_user.first_name if current_user
+div
+  = link_to 'new post', new_wall_path
 
 - @posts.each do |post|
   h4
